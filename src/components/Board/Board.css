@@ -21,7 +21,7 @@
 .tile--dark {
   background-color: var(--dark-tile);
 }
-.highlight:after {
+/* .highlight:after {
   display: block;
   position: absolute;
   content: "";
@@ -31,12 +31,29 @@
   border-radius: 50%;
   left: 25%;
   top: 25%;
+} */
+.highlight:after {
+  display: block;
+  position: absolute;
+  content: "";
+  /* width: calc(8 * var(--tile-size)); */
+  /* background: #bdcc43;
+  left: 25%;
+  top: 25%; */
+  width: calc(0.97 * var(--tile-size));
+  height: calc(0.97 * var(--tile-size));
+  background: var(--highlight);
+  border: 1px solid #000;
+  /* border-radius: 50%; */
+  left: 0%;
+  top: 0%;
 }
 .attacking:after {
   display: block;
   position: absolute;
   content: "";
-  border: 6px solid var(--highlight);
+  /* border: 6px solid var(--highlight); */
+  border: 6px solid red;
   width: calc(var(--tile-size) - 12px);
   height: calc(var(--tile-size) - 12px);
   border-radius: 50%;

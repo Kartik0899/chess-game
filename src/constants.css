@@ -1,9 +1,12 @@
 :root {
   --tile-size: 100px;
-  --light-tile: #f0d8b6;
-  --dark-tile: #b48764;
+  /* --light-tile: #f0d8b6; */
+  --light-tile: #ebecd0;
+  /* --dark-tile: #b48764; */
+  --dark-tile: #739552;
   --bg-color: #202020;
-  --highlight: rgba(0, 0, 0, 0.1);
+  /* --highlight: rgba(0, 0, 0, 0.1); */
+  --highlight: #bdcc43;
   --check: #feec48;
 }
 
