@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useReducer } from "react";
+import "./App.css";
+import Board from "./components/Board/Board";
+import AppContext from "./contexts/Context";
+import { reducer } from "./reducer/reducer";
+import { initGameState } from "./constant";
 
 function App() {
+  const [appState, dispatch] = useReducer(reducer, initGameState); // useReducer returns an array with exactly two values:
+
+  const providerState = {
+    appState,
+    dispatch,
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContext.Provider value={providerState}>
+      <div className="App">
+        <Board />
+      </div>
+    </AppContext.Provider>
   );
 }
 
