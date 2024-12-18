@@ -4,7 +4,7 @@
   position: absolute;
   left: calc(0.25 * var(--tile-size));
   bottom: calc(0.25 * var(--tile-size));
-  background: var(--highlight);
+  background: rgba(0, 0, 0, 0.1);
 }
 .popup--inner {
   width: 50%;
