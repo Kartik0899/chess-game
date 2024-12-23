@@ -52,6 +52,8 @@ function App() {
                 width: "20px",
                 height: "20px",
                 background: appState.turn === "w" ? "#fff" : "#000",
+                border:
+                  appState.turn === "w" ? "1px solid #000" : "1px solid #FFF",
                 marginRight: "0.5rem",
               }}
             ></div>

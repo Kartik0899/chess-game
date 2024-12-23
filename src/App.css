@@ -11,7 +11,7 @@ body {
   display: grid;
   place-content: center;
   height: 100vh;
-  background: linear-gradient(221deg, #565352, transparent);
+  background: #1e293b;
   font-family: "Sofia Sans", sans-serif;
   grid-template-columns: auto 300px;
 }
