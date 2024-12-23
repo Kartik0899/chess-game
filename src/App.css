@@ -11,14 +11,9 @@ body {
   display: grid;
   place-content: center;
   height: 100vh;
-  background: var(--bg-color);
+  background: linear-gradient(221deg, #565352, transparent);
   font-family: "Sofia Sans", sans-serif;
   grid-template-columns: auto 300px;
-  background-image: url("https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w960/f_auto/primary/rylizsjvaagrtqzk45e0");
-  background-size: cover;
-  background-position: top;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
 }
 button {
   background: var(--dark-tile);

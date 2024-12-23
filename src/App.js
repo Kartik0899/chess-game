@@ -53,7 +53,6 @@ function App() {
                 height: "20px",
                 background: appState.turn === "w" ? "#fff" : "#000",
                 marginRight: "0.5rem",
-                border: "1px solid #739552",
               }}
             ></div>
             make your move
